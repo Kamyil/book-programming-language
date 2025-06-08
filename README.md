@@ -130,6 +130,7 @@ let book be object with
   end 
 end
  
+call book.mark_as_read with true
 
 ```
 
