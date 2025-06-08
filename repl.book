@@ -1,5 +1,8 @@
-let number1 be 2
-let number2 be 2.2
+let name be "Alice"
+let age  be 17
 
-call print with number1
-call print with number2
+if age is greater than 18 then
+  call print with "Welcome, {name}!"
+else
+  call print with "Sorry {name}, you’re only {age}."
+end
