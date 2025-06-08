@@ -1,0 +1,5 @@
+let number1 be 2
+let number2 be 2.2
+
+call print with number1
+call print with number2

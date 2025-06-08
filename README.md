@@ -130,7 +130,7 @@ Object can contain both fields and methods, that can be declared the same way as
 Which should also make declaring less confusing, because of "one way of doing things" principle
 
 ```
-let book be with
+let book be object with
   let is_read be false
   let title be "Harry Potter"
   let pages be 1 up to 200
