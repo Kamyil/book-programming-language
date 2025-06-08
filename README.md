@@ -1,3 +1,7 @@
+# ANNOTATION!
+It's not a real programing language yet, but rather an idea of what my personal favorite programming language would look like.
+There is extremely simple repl file that can be run with main.rs file inside this repo, but not all the features mentioned in this README
+will work now
 # Book language
 
 We're striving for programming language, where it's code can be finally read "like a book" with little to no mental-overhead. Which is a huge challenge, because 
