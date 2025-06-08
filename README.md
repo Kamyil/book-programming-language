@@ -23,7 +23,6 @@ Files have a `.book` extension. The programs starts by looking into `start.book`
 # Data types
 In this language you have data types that can be commonly found in other languages
 
-
 ```
 2 // number (integer)
 2.2 // number (float)
@@ -56,8 +55,7 @@ call print with difficulty // returns "hard"
 
 difficulty becomes "simple"
 call print with difficulty // returns "simple"
-
-call print with time // returns 'simple'```
+```
 
 # Constants
 Constants can be declared in similar way, but instead of `let`, they're declared with `constant` keyword followed by `is` keyword
