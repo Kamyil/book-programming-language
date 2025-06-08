@@ -2,12 +2,11 @@
 
 We're striving for programming language, where it's code can be finally read "like a book" with little to no mental-overhead. Which is a huge challenge, because 
 experienced programmers are used to the things working the way they were always working, while beginners scratch their heads 
-wondering `What is this magic?`, `what is constuctor?` etc.. Also some languages contain very advanced features which tend to be overused, leading to confusion 
+wondering `What is this magic?`. Also some languages contain very advanced features and inconsistencies and "lots of ways to do one thing" which tend to be overused, leading to confusion 
 in large codebases. Main goal of this language is to make code *ACTUALLY* readable, by having extremely simple syntax which should make your codebase
 simple and readable for both beginners (to the language itself and beginner programmers) but it should also be readable for large codebases out of the box
 
-So the book language strives for followign principles:
-- Readability
+So the book language strives for following principles:
 - Simplicity 
 - Little to no mental-overhead
 - "One, clear and obvious way of doing things" 
@@ -19,14 +18,7 @@ All `.book` code uses `snake_case` convention consistently, to make it easier to
 in both compiler and LSP, forcing programmer to follow the convention strictly (which should lead to code consistency)
 
 # Files
-Files have a `.book` extension. The programs starts by looking into `start.book` file and running the `start` function
-
-```
-call start
- // this is your entrypoint
-end
-```
-
+Files have a `.book` extension. The programs starts by looking into `start.book` file and running the file from top to bottom
 
 # Data types
 In this language you have data types that can be commonly found in other languages
