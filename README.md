@@ -153,7 +153,8 @@ end
 
 
 # Loops
-You can do loop... by simply writing a `loop`
+You can do loop... by simply writing a `loop`. Following example will create an
+infinite loop
 ```
 loop
  // .. your code
