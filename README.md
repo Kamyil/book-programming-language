@@ -188,7 +188,7 @@ end
 
 # Types
 Book language is statically typed for consistency, but it also inferences those types making your code still consitent, predictable and reliable (no matter of scale)
-without unneeded verbosity. In most places type annotations are required, but there are some places where you need to be explicit of what you mean.
+without unneeded verbosity. In most places type annotations are not required, but there are some places where you need to be explicit of what you mean.
 Treat this language as a book and give readers your intention. You can declare a type containing of the values by using `is either` and `or` keywords
 
 ```
