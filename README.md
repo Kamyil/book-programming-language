@@ -210,11 +210,11 @@ type Flavour is one of Flavours
 
 # Functions
 You can declare a function using `function` keyword. 
-You can declare arguments with `takes` keyword
-You can return a value using `returns` keyword
-and you can call functions using `call` keyword `with` your arguments (using `with` keyword)
+You can declare arguments with `takes` keyword.
+You can return a value using `returns` keyword.
+And you can call functions using `call` keyword `with` your arguments (using `with` keyword)
 
-(look that we're using Present Simple here, because we clearly dinstinct "declaration phase" and "call to action" phase, making it clear for beginners
+(look that we're using 's' ending here, because we clearly dinstinct "declaration phase" and "call to action" phase, making it clear for beginners
 where we're using the stuff and where do we setup the stuff)
 
 ```
@@ -230,7 +230,7 @@ call add with 2,3 // returns 5
 # Recipes (Classes) 
 In this language, we call classes a "recipes", because in most (if not all) languages, classes are simply a recipes for creating objects. 
 So we call them `recipes` directly.  
-You can declare such recipe using `recipe keyword`
+You can declare such recipe using `recipe` keyword
 
 ```
 recipe Cake 
@@ -238,14 +238,17 @@ recipe Cake
 end 
 
 ```
-For more simplicity, fields and methods are declared the same way as variables and functions, because... they're simply are variables and functions
-Methods (recipe's functions) are public by default, but you can make it private by using `private` function
+For more simplicity, fields and methods are declared the same way as variables and functions, because... they're simply are variables and functions.
+Methods (recipe's functions) are public by default, but you can make it private by marking function as `private`
 
 ```
 recipe Cake 
   let ingredients be array of Ingredients
+  let eaten be false
   
-  private function 
+  private function mark_eaten takes new_eaten_value
+    eaten becomes new_eaten_value
+  end 
 end 
 
 ```
@@ -261,7 +264,8 @@ Where there are multiple fields being assigned during creation you can split it 
 
 ```
 let my_first_cake be new Cake where 
-    flavour is 'chocolate'
+    flavour is 'chocolate' and
+    fresh_date is '2025-05-25'
     
 
 ```
@@ -307,15 +311,13 @@ In `start.book` file we can import external modules like this
 get everything as module_a from 'module_a'
 get everything as nested_module from 'nested_folder/nested_module'
 
-call start
-  call module_a.start with 'Hi mom!'
-end
+call module_a.print with 'Hi mom!'
 ```
 
-You can either `get everything` (both are keywords) from given module or get single items from given module
+You can either `get everything` (both are keywords) from given module (with ability to alias it to you desired name with `as` keyword) or get single items from given module
 
 ```
-get some_variable from 'module_a'
+get some_variable, some_function, some_recipe from 'module_a'
 ```
 
 However, all things within a module are private unless you use `shared` keyword to explicity share them with others 
@@ -325,6 +327,5 @@ However, all things within a module are private unless you use `shared` keyword 
 shared let thing be 2
 ```
 
-<!-- TODO: Still don't know whetver "all things public by default" are better or "all things private by default"  -->
 
 
