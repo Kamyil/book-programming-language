@@ -15,7 +15,7 @@ So the book language strives for following principles:
 
 # Casing 
 All `.book` code uses `snake_case` convention consistently, to make it easier to read the code for everyone. All other cases will be marked as errors
-in both compiler and LSP, forcing programmer to follow the convention strictly (which should lead to code consistency)
+in both compiler and LSP (todo!), forcing programmer to follow the convention strictly (which should lead to code consistency)
 
 # Files
 Files have a `.book` extension. The programs starts by looking into `start.book` file and running the file from top to bottom
@@ -67,7 +67,7 @@ constant SIZE is 2
 Since it's truly a constant, you can't either mutate it or change the value via functions or methods
 
 # Logical operators
-Book language doesn't use `==`, `&&`, `||` `!`, `<`, `>` or other symbols for marking logic. 
+Book language doesn't use `==`, `&&`, `||` `!`, `<`, `>` or other symbols for marking logic.
 It simply uses words like `is`, `and`, `or`, `not`, `less than` and `greather than`
 So we can write complicated logic like this `if age = 18 && age < 24 == false` as 
 ```
@@ -78,7 +78,7 @@ end
 
 
 # Numbers
-Numbers have a simple `Number` type which indicate if data is number. The type also has a subtype declaring if it's integer or float,
+Numbers have a simple `Number` type which indicates if data is number. The type also has a subtype declaring if it's integer or float,
 making it easier to distinguish between two. You can extract that subtype information by using global `is_integer` and `is_float` global helper functions
 
 # Strings
