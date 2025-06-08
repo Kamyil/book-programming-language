@@ -142,7 +142,7 @@ You can declare a conditional using simple `if` / `else if` / `else ` blocks
 let age be 17
 
 if age is less than 18 then
-  call print with "You cant drink alcohol in EU"
+  call print with "You can't drink alcohol in EU"
 else if age is 18
   call print with "You can now drink alcohol in EU"
 else
@@ -167,7 +167,7 @@ you can declare the condition when you want to break
 let input_value be 2
 
 loop
-  input_value becomes 3
+  input_value becomes input_value + 1
 
   if input_value is 10 then break
 end
