@@ -1,6 +1,6 @@
 # Book language
 
-We're striving for programming language, where it's code can be finally read "like a book". Which is a huge challenge, because 
+We're striving for programming language, where it's code can be finally read "like a book" with little to no mental-overhead. Which is a huge challenge, because 
 experienced programmers are used to the things working the way they were always working, while beginners scratch their heads 
 wondering `What is this magic?`, `what is constuctor?` etc.. Also some languages contain very advanced features which tend to be overused, leading to confusion 
 in large codebases. Main goal of this language is to make code *ACTUALLY* readable, by having extremely simple syntax which should make your codebase
@@ -9,6 +9,7 @@ simple and readable for both beginners (to the language itself and beginner prog
 So the book language strives for followign principles:
 - Readability
 - Simplicity 
+- Little to no mental-overhead
 - "One, clear and obvious way of doing things" 
 - Explicit (never implicit)
 - Composition over inheritance
@@ -34,7 +35,7 @@ In this language you have data types that can be commonly found in other languag
 ```
 2 // number (integer)
 2.2 // number (float)
-'String' // string
+"String" // string
 true or false // booleans
 nothing // undefined, null and empty values
 array // arrays
@@ -58,17 +59,16 @@ Using `let`, then following with variable name and equal being simply "be".
 You can mutate (assign new values) to variables by using `becomes` keyword
 
 ```
-let time be 'hard'
+let difficulty be "hard"
+call print with difficulty // returns "hard"
 
-call print with time // returns 'hard'
+difficulty becomes "simple"
+call print with difficulty // returns "simple"
 
-time becomes 'simple' // returns 'simple'
-
-call print with time // returns 'hard'
-```
+call print with time // returns 'simple'```
 
 # Constants
-Constants can be declared in similar way, but instead of `let` use `constant`
+Constants can be declared in similar way, but instead of `let`, they're declared with `constant` keyword followed by `is` keyword
 
 ```
 constant SIZE is 2
@@ -82,7 +82,7 @@ It simply uses words like `is`, `and`, `or`, `not`, `less than` and `greather th
 So we can write complicated logic like this `if age = 18 && age < 24 == false` as 
 ```
 if age is greater than 18 and is not less than 21
- call print with "You can drink alcohol almost everywhere!"
+ call print with "You can drink alcohol almost anywhere!"
 end
 ```
 
@@ -120,8 +120,8 @@ You can declare an object directly by using `object with` keyword
 
 ```
 let book be object with
-  title be "Harry Potter"
-  pages be 1 up to 200
+  let title be "Harry Potter"
+  let pages be 1 up to 200
 end
 ```
 
